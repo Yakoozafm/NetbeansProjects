@@ -16,6 +16,7 @@ public class Java1gitTeszt {
      */
     public static void main(String[] args) {
         System.out.println("Gittest - ok.");
+        System.out.println("Sőt Király!");
     }
     
 }
