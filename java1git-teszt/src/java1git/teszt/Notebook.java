@@ -6,6 +6,5 @@ package java1git.teszt;
  */
 public class Notebook extends Szamitogep{
     boolean hordozhato = true;
-    String marka;
-    String tipus;
+
 }

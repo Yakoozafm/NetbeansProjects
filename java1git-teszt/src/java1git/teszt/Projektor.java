@@ -7,7 +7,6 @@ package java1git.teszt;
  */
 public class Projektor extends Eszkoz{
     String leltariszam;
-    String marka;
-    String tipus; 
+
     
 }
