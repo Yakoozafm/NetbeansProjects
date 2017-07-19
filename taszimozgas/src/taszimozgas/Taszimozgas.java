@@ -10,6 +10,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -31,7 +35,20 @@ public class Taszimozgas extends Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        DB db = new DB();
+        ResultSet rs = db.iranyok();
+        try {
+            while (rs.next()) { 
+                System.out.println(rs.getString(2));
+            }
+        } catch (SQLException ex) {
+        }
+        
         launch(args);
+        
+        db.lezar();
+        
+        
     }
     
 }
